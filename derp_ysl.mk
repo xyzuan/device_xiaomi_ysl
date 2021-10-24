@@ -9,15 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common DerpFestOS stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
+# Inherit some common DerpFestOS flags
+DERP_BUILDTYPE := Official
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := ysl
+PRODUCT_NAME := derp_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
