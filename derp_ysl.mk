@@ -17,6 +17,7 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common DerpFestOS flags
 DERP_BUILDTYPE := Official
+USE_LEGACY_BOOTANIMATION := true
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
