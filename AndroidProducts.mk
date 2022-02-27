@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ysl.mk
+    $(LOCAL_DIR)/xdroid_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_ysl-user \
-    derp_ysl-userdebug \
-    derp_ysl-eng
+    xdroid_ysl-user \
+    xdroid_ysl-userdebug \
+    xdroid_ysl-eng
